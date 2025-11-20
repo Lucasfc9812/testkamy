@@ -1,9 +1,9 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
   experimental: {
-    middlewarePrefetch: 'flexible'
-  }
+    proxyPrefetch: true, // substitui middlewarePrefetch
+  },
 };
 
 module.exports = nextConfig;
